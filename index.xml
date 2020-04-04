@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage of SpaceNetLab on Notebook</title>
+    <link>/</link>
+    <description>Recent content in Homepage of SpaceNetLab on Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Apr 2020 09:18:26 +0800</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Website on Hugo.</title>
+      <link>/2-blog/website_setup/</link>
+      <pubDate>Sat, 04 Apr 2020 09:18:26 +0800</pubDate>
+      
+      <guid>/2-blog/website_setup/</guid>
+      <description>This introduction page is a shameful copy of Hugo-theme-learn.
+ Create your project Hugo provides a new command to create a new website.
+hugo new site &amp;lt;new_project&amp;gt; Install the theme Install the Hugo-theme-learn theme by following this documentation
+This theme&amp;rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git
+Alternatively, you can download the theme as .zip file and extract it in the themes directory
+Basic configuration When building the website, you can set a theme by using --theme option.</description>
+    </item>
+    
+  </channel>
+</rss>

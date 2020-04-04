@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.67.1" />
+    <meta name="description" content="">
+<meta name="author" content="Zeqi Lai">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Website on Hugo. :: Notebook</title>
+
+    
+    <link href="/css/nucleus.css?1585971272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1585971272" rel="stylesheet">
+    <link href="/css/hybrid.css?1585971272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1585971272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1585971272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1585971272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1585971272" rel="stylesheet">
+    <link href="/css/theme.css?1585971272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1585971272" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1585971272"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/2-blog/website_setup/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://mingchen0919.github.io/blogdown-website-with-hugo-theme-learn/">
+  <img src="/images/happy_zergling.jpeg">
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1585971272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1585971272"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1585971272"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduction/">
+          <b>1. </b>Introduction
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-blog/" title="Technical Blog" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-blog/">
+          <b>2. </b>Technical Blog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2-blog/website_setup/" title="Website on Hugo." class="dd-item active">
+        <a href="/2-blog/website_setup/">
+        Website on Hugo.
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-rtc-lab/" title="RTC-Lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-rtc-lab/">
+          <b>3. </b>RTC-Lab
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-about/" title="About" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/4-about/">
+          <b>F. </b>About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/lzq8272587"><i class='fab fa-fw fa-github'></i> GitHub</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://tuchong.com/487459/"><i class='fas fa-fw fa-camera'></i> Photos</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://lzq8272587.github.io/"><i class='fas fa-fw fa-bookmark'></i> Homepage</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="/credits"><i class='fas fa-fw fa-bullhorn'></i> Credits</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   Website on Hugo. 
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-your-project">Create your project</a></li>
+    <li><a href="#install-the-theme">Install the theme</a></li>
+    <li><a href="#basic-configuration">Basic configuration</a></li>
+    <li><a href="#create-your-first-chapter-page">Create your first chapter page</a></li>
+    <li><a href="#create-your-first-content-pages">Create your first content pages</a></li>
+    <li><a href="#launching-the-website-locally">Launching the website locally</a></li>
+    <li><a href="#build-the-website">Build the website</a></li>
+    <li><a href="#create-your-project-1">Create your project</a></li>
+    <li><a href="#install-the-theme-1">Install the theme</a></li>
+    <li><a href="#basic-configuration-1">Basic configuration</a></li>
+    <li><a href="#create-your-first-chapter-page-1">Create your first chapter page</a></li>
+    <li><a href="#create-your-first-content-pages-1">Create your first content pages</a></li>
+    <li><a href="#launching-the-website-locally-1">Launching the website locally</a></li>
+    <li><a href="#build-the-website-1">Build the website</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/front-end">front-end</a>
+
+  <a class="tag-link" href="/tags/hugo">hugo</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Website on Hugo.
+            </h1>
+          
+
+        
+
+
+
+
+<div class="notices note" ><p>This introduction page is a shameful copy of <a href="https://gohugo.io/themes/installing/"><strong>Hugo-theme-learn</strong></a>.</p>
+</div>
+
+<h2 id="create-your-project">Create your project</h2>
+<p>Hugo provides a <code>new</code> command to create a new website.</p>
+<pre><code>hugo new site &lt;new_project&gt;
+</code></pre><h2 id="install-the-theme">Install the theme</h2>
+<p>Install the <strong>Hugo-theme-learn</strong> theme by following <a href="https://gohugo.io/themes/installing/">this documentation</a></p>
+<p>This theme&rsquo;s repository is: <a href="https://github.com/matcornic/hugo-theme-learn.git">https://github.com/matcornic/hugo-theme-learn.git</a></p>
+<p>Alternatively, you can <a href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip">download the theme as .zip</a> file and extract it in the <code>themes</code> directory</p>
+<h2 id="basic-configuration">Basic configuration</h2>
+<p>When building the website, you can set a theme by using <code>--theme</code> option. However, we suggest you modify the configuration file (<code>config.toml</code>) and set the theme as the default. You can also add the <code>[outputs]</code> section to enable the search functionality.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Change the default theme to be use when building the site with Hugo</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-theme-learn&#34;</span>
+
+<span style="color:#75715e"># For search functionality</span>
+[<span style="color:#a6e22e">outputs</span>]
+<span style="color:#a6e22e">home</span> = [ <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+</code></pre></div><h2 id="create-your-first-chapter-page">Create your first chapter page</h2>
+<p>Chapters are pages that contain other child pages. It has a special layout style and usually just contains a <em>chapter name</em>, the <em>title</em> and a <em>brief abstract</em> of the section.</p>
+<pre><code>### Chapter 1
+
+# Basics
+
+Discover what this Hugo theme is all about and the core concepts behind it.
+</code></pre><p><strong>Hugo-theme-learn</strong> provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command</p>
+<pre><code>hugo new --kind chapter basics/_index.md
+</code></pre><p>By opening the given file, you should see the property <code>chapter=true</code> on top, meaning this page is a <em>chapter</em>.</p>
+<p>By default all chapters and pages are created as a draft. If you want to render these pages, remove the property <code>draft: true</code> from the metadata.</p>
+<h2 id="create-your-first-content-pages">Create your first content pages</h2>
+<p>Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:</p>
+<pre><code>hugo new basics/first-content.md
+hugo new basics/second-content/_index.md
+</code></pre><p>Feel free to edit thoses files by adding some sample content and replacing the <code>title</code> value in the beginning of the files.</p>
+<h2 id="launching-the-website-locally">Launching the website locally</h2>
+<p>Launch by using the following command:</p>
+<pre><code>hugo serve
+</code></pre><p>Go to <code>http://localhost:1313</code></p>
+<p>You should notice three things:</p>
+<ol>
+<li>You have a left-side <strong>Basics</strong> menu, containing two submenus with names equal to the <code>title</code> properties in the previously created files.</li>
+<li>The home page explains how to customize it by following the instructions.</li>
+<li>When you run <code>hugo serve</code>, when the contents of the files change, the page automatically refreshes with the changes. Neat!</li>
+</ol>
+<h2 id="build-the-website">Build the website</h2>
+<p>When your site is ready to deploy, run the following command:</p>
+<pre><code>hugo
+</code></pre><p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
+
+<div class="notices note" ><p>This website can be automatically published and hosted with <a href="https://www.netlify.com/">Netlify</a> (Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a>). Alternatively, you can use <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a></p>
+</div>
+
+<p>The following steps are here to help you initialize your new website. If you don&rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this <a href="https://gohugo.io/overview/quickstart/">great documentation for beginners</a>.</p>
+<h2 id="create-your-project-1">Create your project</h2>
+<p>Hugo provides a <code>new</code> command to create a new website.</p>
+<pre><code>hugo new site &lt;new_project&gt;
+</code></pre><h2 id="install-the-theme-1">Install the theme</h2>
+<p>Install the <strong>Hugo-theme-learn</strong> theme by following <a href="https://gohugo.io/themes/installing/">this documentation</a></p>
+<p>This theme&rsquo;s repository is: <a href="https://github.com/matcornic/hugo-theme-learn.git">https://github.com/matcornic/hugo-theme-learn.git</a></p>
+<p>Alternatively, you can <a href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip">download the theme as .zip</a> file and extract it in the <code>themes</code> directory</p>
+<h2 id="basic-configuration-1">Basic configuration</h2>
+<p>When building the website, you can set a theme by using <code>--theme</code> option. However, we suggest you modify the configuration file (<code>config.toml</code>) and set the theme as the default. You can also add the <code>[outputs]</code> section to enable the search functionality.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Change the default theme to be use when building the site with Hugo</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-theme-learn&#34;</span>
+
+<span style="color:#75715e"># For search functionality</span>
+[<span style="color:#a6e22e">outputs</span>]
+<span style="color:#a6e22e">home</span> = [ <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+</code></pre></div><h2 id="create-your-first-chapter-page-1">Create your first chapter page</h2>
+<p>Chapters are pages that contain other child pages. It has a special layout style and usually just contains a <em>chapter name</em>, the <em>title</em> and a <em>brief abstract</em> of the section.</p>
+<pre><code>### Chapter 1
+
+# Basics
+
+Discover what this Hugo theme is all about and the core concepts behind it.
+</code></pre><p><strong>Hugo-theme-learn</strong> provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command</p>
+<pre><code>hugo new --kind chapter basics/_index.md
+</code></pre><p>By opening the given file, you should see the property <code>chapter=true</code> on top, meaning this page is a <em>chapter</em>.</p>
+<p>By default all chapters and pages are created as a draft. If you want to render these pages, remove the property <code>draft: true</code> from the metadata.</p>
+<h2 id="create-your-first-content-pages-1">Create your first content pages</h2>
+<p>Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:</p>
+<pre><code>hugo new basics/first-content.md
+hugo new basics/second-content/_index.md
+</code></pre><p>Feel free to edit thoses files by adding some sample content and replacing the <code>title</code> value in the beginning of the files.</p>
+<h2 id="launching-the-website-locally-1">Launching the website locally</h2>
+<p>Launch by using the following command:</p>
+<pre><code>hugo serve
+</code></pre><p>Go to <code>http://localhost:1313</code></p>
+<p>You should notice three things:</p>
+<ol>
+<li>You have a left-side <strong>Basics</strong> menu, containing two submenus with names equal to the <code>title</code> properties in the previously created files.</li>
+<li>The home page explains how to customize it by following the instructions.</li>
+<li>When you run <code>hugo serve</code>, when the contents of the files change, the page automatically refreshes with the changes. Neat!</li>
+</ol>
+<h2 id="build-the-website-1">Build the website</h2>
+<p>When your site is ready to deploy, run the following command:</p>
+<pre><code>hugo
+</code></pre><p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
+
+<div class="notices note" ><p>This website can be automatically published and hosted with <a href="https://www.netlify.com/">Netlify</a> (Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a>). Alternatively, you can use <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a></p>
+</div>
+
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1585971272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1585971272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1585971272"></script>
+    <script src="/js/jquery.sticky.js?1585971272"></script>
+    <script src="/js/featherlight.min.js?1585971272"></script>
+    <script src="/js/highlight.pack.js?1585971272"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1585971272"></script>
+    <script src="/js/learn.js?1585971272"></script>
+    <script src="/js/hugo-learn.js?1585971272"></script>
+
+    <link href="/mermaid/mermaid.css?1585971272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1585971272"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
